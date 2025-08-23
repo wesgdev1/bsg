@@ -1,26 +1,53 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ffffff;
+  --primary-red: #dc2626;
+  --primary-yellow: #fbbf24;
+  --accent-red: #ef4444;
+  --accent-yellow: #f59e0b;
+  --dark-gray: #111111;
+  --light-gray: #1f1f1f;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary-red: var(--primary-red);
+  --color-primary-yellow: var(--primary-yellow);
+  --color-accent-red: var(--accent-red);
+  --color-accent-yellow: var(--accent-yellow);
+  --color-dark-gray: var(--dark-gray);
+  --color-light-gray: var(--light-gray);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Estilos personalizados para BSG Pay */
+.gradient-red-yellow {
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-yellow) 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-yellow) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(220, 38, 38, 0.2);
 }
