@@ -49,12 +49,20 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <button className="gradient-red-yellow text-white px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-red-500/25">
+            <a
+              href="https://wa.me/573104430801?text=¡Hola! 👋 Vengo desde su página web y estoy interesado en verificar mi cuenta PayPal. ¿Podrían ayudarme con el proceso?"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="gradient-red-yellow text-white px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-red-500/25"
+            >
               Verificar Mi Cuenta Ahora
-            </button>
-            <button className="border-2 border-yellow-400 text-yellow-400 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-yellow-400 hover:text-black transition-all duration-300">
+            </a>
+            <a
+              href="#servicios"
+              className="border-2 border-yellow-400 text-yellow-400 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-yellow-400 hover:text-black transition-all duration-300"
+            >
               Ver Planes Disponibles
-            </button>
+            </a>
           </div>
 
           {/* Stats */}

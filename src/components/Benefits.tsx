@@ -41,27 +41,51 @@ export default function Benefits() {
   const processSteps = [
     {
       step: "01",
-      title: "Selecciona tu Plan",
+      title: "Accede a tu PayPal",
       description:
-        "Elige el plan que mejor se adapte a tus necesidades (3, 5 u 8 años).",
+        "Ingresa a tu cuenta PayPal desde tu navegador PC o móvil de forma segura.",
     },
     {
       step: "02",
-      title: "Proporciona tus Datos",
+      title: "Ve a tu Cartera",
       description:
-        "Envíanos la información de tu cuenta PayPal de forma segura.",
+        "Haz clic en la sección 'Cartera' para gestionar tus métodos de pago.",
     },
     {
       step: "03",
-      title: "Verificación Automática",
+      title: "Asocia la Tarjeta",
       description:
-        "Nuestro sistema realiza la verificación con la tarjeta virtual.",
+        "Vincula la tarjeta Mastercard BSG_PAY con tu dirección de residencia.",
     },
     {
       step: "04",
-      title: "¡Listo para Usar!",
+      title: "Confirma los Datos",
       description:
-        "Tu cuenta PayPal queda verificada y lista para transacciones.",
+        "Revisa la información y haz clic en 'Listo' para continuar.",
+    },
+    {
+      step: "05",
+      title: "Selecciona la Tarjeta",
+      description:
+        "Haz clic en la tarjeta que acabas de agregar para activarla.",
+    },
+    {
+      step: "06",
+      title: "Solicita Verificación",
+      description:
+        "Clic en 'Confirmar y solicitar código' para iniciar la verificación.",
+    },
+    {
+      step: "07",
+      title: "Ingresa el Código",
+      description:
+        "Introduce el código de 4 dígitos que BSG_PAY te proporcionará.",
+    },
+    {
+      step: "08",
+      title: "¡Verificación Completa!",
+      description:
+        "Tu cuenta PayPal queda 100% verificada y lista para usar globalmente.",
     },
   ];
 
@@ -103,14 +127,14 @@ export default function Benefits() {
         <div className="bg-gradient-to-r from-gray-900/50 to-gray-800/50 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-gray-700">
           <div className="text-center mb-12">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Proceso Simple en <span className="gradient-text">4 Pasos</span>
+              Proceso Simple en <span className="gradient-text">8 Pasos</span>
             </h3>
             <p className="text-gray-300 text-lg">
               Verificar tu cuenta PayPal nunca había sido tan fácil y rápido
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {processSteps.map((step, index) => (
               <div key={index} className="text-center group">
                 <div className="relative mb-6">
@@ -118,7 +142,7 @@ export default function Benefits() {
                     {step.step}
                   </div>
                   {index < processSteps.length - 1 && (
-                    <div className="hidden lg:block absolute top-8 left-16 w-full h-0.5 bg-gradient-to-r from-red-600 to-yellow-500"></div>
+                    <div className="hidden lg:block absolute top-8 left-16 w-[calc(100%-4rem)] h-0.5 bg-gradient-to-r from-red-600 to-yellow-500"></div>
                   )}
                 </div>
                 <h4 className="text-lg font-bold text-white mb-3">
@@ -130,9 +154,14 @@ export default function Benefits() {
           </div>
 
           <div className="text-center mt-12">
-            <button className="gradient-red-yellow text-white px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-all duration-300 transform hover:scale-105">
+            <a
+              href="https://wa.me/573104430801?text=¡Hola! 👋 Vengo desde su página web y estoy interesado en verificar mi cuenta PayPal. ¿Podrían ayudarme con el proceso?"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="gradient-red-yellow text-white px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-all duration-300 transform hover:scale-105"
+            >
               Comenzar Verificación Ahora
-            </button>
+            </a>
           </div>
         </div>
       </div>
