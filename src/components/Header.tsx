@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,9 +18,11 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <img
+            <Image
               src="https://res.cloudinary.com/djrdozcdw/image/upload/v1756136236/bsg%20images/ChatGPT_Image_25_ago_2025_10_36_31_a.m._afqvzw.png"
               alt="BSG Pay Logo"
+              width={160}
+              height={40}
               className="h-10 w-auto"
             />
           </div>
@@ -49,12 +53,12 @@ export default function Header() {
             >
               Calculadora PayPal
             </a>
-            <a
+            <Link
               href="/blog"
               className="text-white hover:text-yellow-400 transition-colors"
             >
               Blog
-            </a>
+            </Link>
             <a
               href="#contacto"
               className="text-white hover:text-yellow-400 transition-colors"
@@ -141,13 +145,13 @@ export default function Header() {
               >
                 Calculadora PayPal
               </a>
-              <a
+              <Link
                 href="/blog"
                 className="block px-3 py-2 text-white hover:text-yellow-400 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Blog
-              </a>
+              </Link>
               <a
                 href="#contacto"
                 className="block px-3 py-2 text-white hover:text-yellow-400 transition-colors"

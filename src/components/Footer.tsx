@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-b from-gray-900 to-black border-t border-gray-800">
@@ -6,9 +8,11 @@ export default function Footer() {
           {/* Brand Section */}
           <div className="col-span-1 md:col-span-2">
             <div className="mb-4">
-              <img
+              <Image
                 src="https://res.cloudinary.com/djrdozcdw/image/upload/v1756136236/bsg%20images/ChatGPT_Image_25_ago_2025_10_36_31_a.m._afqvzw.png"
                 alt="BSG Pay Logo"
+                width={192}
+                height={48}
                 className="h-12 w-auto"
               />
             </div>
