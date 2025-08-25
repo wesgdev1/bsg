@@ -44,6 +44,18 @@ export default function Header() {
               Beneficios
             </a>
             <a
+              href="/calculadora"
+              className="text-white hover:text-yellow-400 transition-colors"
+            >
+              Calculadora PayPal
+            </a>
+            <a
+              href="/blog"
+              className="text-white hover:text-yellow-400 transition-colors"
+            >
+              Blog
+            </a>
+            <a
               href="#contacto"
               className="text-white hover:text-yellow-400 transition-colors"
             >
@@ -65,33 +77,35 @@ export default function Header() {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <button
-              onClick={() => isMounted && setIsMenuOpen(!isMenuOpen)}
-              className="text-white hover:text-yellow-400 focus:outline-none"
-            >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+            {isMounted && (
+              <button
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="text-white hover:text-yellow-400 focus:outline-none"
               >
-                {isMounted && isMenuOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                )}
-              </svg>
-            </button>
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  {isMenuOpen ? (
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  ) : (
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  )}
+                </svg>
+              </button>
+            )}
           </div>
         </div>
 
@@ -119,6 +133,20 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Beneficios
+              </a>
+              <a
+                href="/calculadora"
+                className="block px-3 py-2 text-white hover:text-yellow-400 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Calculadora PayPal
+              </a>
+              <a
+                href="/blog"
+                className="block px-3 py-2 text-white hover:text-yellow-400 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blog
               </a>
               <a
                 href="#contacto"

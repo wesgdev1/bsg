@@ -51,3 +51,232 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(220, 38, 38, 0.2);
 }
+
+/* Estilos para el contenido del blog */
+.blog-content {
+  color: #d1d5db;
+  line-height: 1.75;
+}
+
+.blog-content .intro-section {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.1) 0%, rgba(251, 191, 36, 0.1) 100%);
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.blog-content .lead-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+.blog-content .section-card {
+  background: rgba(17, 24, 39, 0.8);
+  border: 1px solid rgba(75, 85, 99, 0.5);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.blog-content .section-title {
+  color: #fbbf24;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgba(251, 191, 36, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.blog-content .section-text {
+  color: #e5e7eb;
+  margin: 0;
+}
+
+.blog-content .main-title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #dc2626 0%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.blog-content .benefits-section {
+  margin-bottom: 3rem;
+}
+
+.blog-content .benefit-card {
+  background: linear-gradient(145deg, rgba(31, 41, 55, 0.8) 0%, rgba(17, 24, 39, 0.9) 100%);
+  border: 1px solid rgba(75, 85, 99, 0.4);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.blog-content .benefit-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(251, 191, 36, 0.6);
+  box-shadow: 0 10px 30px rgba(220, 38, 38, 0.2);
+}
+
+.blog-content .benefit-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.blog-content .benefit-number {
+  background: linear-gradient(135deg, #dc2626 0%, #fbbf24 100%);
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.blog-content .benefit-title {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.blog-content .benefit-text {
+  color: #d1d5db;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.blog-content .feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.blog-content .feature-item {
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  color: #10b981;
+  font-weight: 600;
+  text-align: center;
+}
+
+.blog-content .service-section {
+  margin-bottom: 3rem;
+}
+
+.blog-content .service-intro {
+  text-align: center;
+  color: #e5e7eb;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.blog-content .process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.blog-content .process-card {
+  background: linear-gradient(145deg, rgba(17, 24, 39, 0.9) 0%, rgba(31, 41, 55, 0.8) 100%);
+  border: 1px solid rgba(75, 85, 99, 0.4);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.blog-content .process-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(251, 191, 36, 0.6);
+  box-shadow: 0 15px 35px rgba(220, 38, 38, 0.15);
+}
+
+.blog-content .process-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.blog-content .process-title {
+  color: #fbbf24;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.blog-content .process-text {
+  color: #d1d5db;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.blog-content .conclusion-section {
+  margin-bottom: 2rem;
+}
+
+.blog-content .conclusion-card {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.15) 0%, rgba(251, 191, 36, 0.15) 100%);
+  border: 2px solid rgba(251, 191, 36, 0.4);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.blog-content .conclusion-text {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.blog-content .cta-highlight {
+  background: linear-gradient(135deg, #dc2626 0%, #fbbf24 100%);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.blog-content .cta-text {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .blog-content .benefit-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .blog-content .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-content .process-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
